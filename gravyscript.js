@@ -39,9 +39,21 @@ $(document).ready(function() {
     return this;
   }
 
-
- // STRING METHODS
+  // array.zip();
+  Array.prototype.zip = function(values) {
+    hashName = {};
+    if (this.length !== values.length) {
+      console.log("Error! ARRAYS NOT NOT EQUAL LENGTHS");
+    } else {
+      for (var i = 0; i < this.length; i++) {
+        hashName[this[i]] = values[i];
+      }
+    }
+    return hashName;
+  }
   
+ // STRING METHODS
+
   // string.reverse();
   String.prototype.reverse = function () {
     return this.split('').reverse().join('');
