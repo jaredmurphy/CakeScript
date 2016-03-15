@@ -3,7 +3,7 @@ A Javascript library which uses prototyping to allow more convenient object meth
 
 ## Installation
 * Download the gravyscript.js file
-* Include gravyscript.js in your html <script></script> tags AFTER jQuery and BEFORE any script file that would depend on GravyScript methods
+* Include gravyscript.js in your html `<script></script>` tags AFTER jQuery and BEFORE any script file that would depend on GravyScript methods
 
 ## Example Usage
 #### array.sample();
