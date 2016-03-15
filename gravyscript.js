@@ -56,7 +56,6 @@ $(document).ready(function() {
  
 
  // object.size();
- // required for - object.unZip();
  Object.prototype.size = function() {
    var size = 0;
    for (var key in this) {
@@ -65,13 +64,11 @@ $(document).ready(function() {
       }
     }
     return size;
-  }
+ };
 
 
  // object.unZip();
- // dependency - object.size();
  Object.prototype.unZip = function() {
-   var objectLength = this.size();
    var keysArray = [];
    var valuesArray = [];
    for (var key in this) {
