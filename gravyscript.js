@@ -48,8 +48,8 @@ $(document).ready(function() {
       for (var i = 0; i < this.length; i++) {
         hashName[this[i]] = values[i];
       }
+      return hashName;
     }
-    return hashName;
   }
   
  // STRING METHODS
