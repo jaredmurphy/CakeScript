@@ -13,3 +13,4 @@ var arr = [1, 2, 3, 4, 5];
 arr.sample();
 => 3
 ```
+Please see [GravyScript Wiki] (https://github.com/jaredmurphy/GravyScript/wiki) for specific documentation for all GravyScript methods. 
