@@ -51,6 +51,41 @@ $(document).ready(function() {
       return hashName;
     }
   }
+
+ // OBJECT METHODS
+ 
+
+ // object.size();
+ // required for - object.unZip();
+ Object.prototype.size = function() {
+   var size = 0;
+   for (var key in this) {
+     if (this.hasOwnProperty(key)) {
+       size++;
+      }
+    }
+    return size;
+  }
+
+
+ // object.unZip();
+ // dependency - object.size();
+ Object.prototype.unZip = function() {
+   var objectLength = this.size();
+   var keysArray = [];
+   var valuesArray = [];
+   for (var key in this) {
+     if (key === "unZip") {
+       break;
+     } else {
+       keysArray.push(key);
+       valuesArray.push(this[key]);
+     }
+   }
+   return [keysArray, valuesArray];
+ }; 
+    
+
   
  // STRING METHODS
 
