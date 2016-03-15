@@ -27,4 +27,11 @@ $(document).ready(function() {
     var randomIndex = Math.floor(Math.random() * length + 0);
     return this[randomIndex];
   }
+
+ // STRING METHODS
+  
+  // string.reverse();
+  String.prototype.reverse = function () {
+    return this.split('').reverse().join('');
+  }
 });
