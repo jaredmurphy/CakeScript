@@ -53,7 +53,6 @@ $(document).ready(function() {
   }
 
  // OBJECT METHODS
- 
 
  // object.size();
  Object.prototype.size = function() {
@@ -64,6 +63,28 @@ $(document).ready(function() {
       }
     }
     return size;
+ };
+
+
+ // object.sortingHat();
+ Object.prototype.sortingHat = function(key) {
+   var arr = [];
+   for (var i in this) {
+     if (this.hasOwnProperty(i)) {
+       for (var j in this[i]) {
+         if (this[i].hasOwnProperty(j)) {
+           if (j === key) {
+             arr.push(this[i]);
+           }
+         }
+       }
+     }
+   }
+   return arr.sort(function(a,b){ 
+     if (a[key] < b[key]) return -1;
+     if (a[key] > b[key]) return 1;
+     return 0;
+   });
  };
 
 
