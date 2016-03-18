@@ -2,7 +2,7 @@
 A Javascript library which uses prototyping to allow more convenient object methods, like those you see in Ruby. 
 
 ## Installation
-* Download the gravyscript.js file
+* Download the cakescript.js file
 * Include gravyscript.js in your html `<script></script>` tags AFTER jQuery and BEFORE any script file that would depend on GravyScript methods
 
 ## Example Usage
@@ -13,7 +13,7 @@ var arr = [1, 2, 3, 4, 5];
 arr.sample();
 => 3
 ```
-Please see [GravyScript Wiki] (https://github.com/jaredmurphy/GravyScript/wiki) for specific documentation for all GravyScript methods. 
+Please see [GravyScript Wiki] (https://github.com/jaredmurphy/CakeScript/wiki) for specific documentation for all CakeScript methods. 
 
 ## Contribute
 Feel free to fork, and submit a pull request!
