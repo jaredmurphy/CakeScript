@@ -21,6 +21,14 @@ $(document).ready(function() {
 
  // ARRAY METHODS
 
+
+  // array.list();
+  Array.prototype.last = function() {
+    var length = this.length;
+    return this[this.length -1];
+  }
+ 
+
   // array.sample();
   Array.prototype.sample = function() { 
     var length = this.length;
