@@ -25,7 +25,7 @@ $(document).ready(function() {
   // array.list();
   Array.prototype.last = function() {
     var length = this.length;
-    return this[this.length -1];
+    return this[length -1];
   }
  
 
