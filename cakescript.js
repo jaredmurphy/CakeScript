@@ -62,6 +62,15 @@ $(document).ready(function() {
 
  // OBJECT METHODS
 
+ // pkeyValue
+Object.prototype.pKeyValue = function(){
+  for (var key in this) {
+    if (typeof(this[key]) !== 'function'){
+      console.log(key + ": " + this[key]);
+    }
+  }
+
+
  // object.size();
  Object.prototype.size = function() {
    var size = 0;
