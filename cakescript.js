@@ -27,10 +27,10 @@ $(document).ready(function() {
     var length = this.length;
     return this[length -1];
   }
- 
+
 
   // array.sample();
-  Array.prototype.sample = function() { 
+  Array.prototype.sample = function() {
     var length = this.length;
     var randomIndex = Math.floor(Math.random() * length + 0);
     return this[randomIndex];
@@ -38,7 +38,7 @@ $(document).ready(function() {
 
   // array.shuffle();
   Array.prototype.shuffle = function() {
-    for (var i = this.length-1; i > 0; i--) {
+    for (var i = this.length-1; i >= 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
       var temp = this[i];
       this[i] = this[j];
@@ -88,7 +88,7 @@ $(document).ready(function() {
        }
      }
    }
-   return arr.sort(function(a,b){ 
+   return arr.sort(function(a,b){
      if (a[key] < b[key]) return -1;
      if (a[key] > b[key]) return 1;
      return 0;
@@ -109,10 +109,10 @@ $(document).ready(function() {
      }
    }
    return [keysArray, valuesArray];
- }; 
-    
+ };
 
-  
+
+
  // STRING METHODS
 
   // string.reverse();
